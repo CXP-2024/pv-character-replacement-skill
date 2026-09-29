@@ -1,0 +1,4 @@
+interface:
+  display_name: "PV 角色替换帧动画"
+  short_description: "保留原 PV 画风与演出，用角色重绘、二维差值和连续性核对制作替换动画"
+  default_prompt: "使用 $pv-character-replacement，将这段 PV 的人物替换为我提供的角色，保留原画风、分镜与动作节奏，先分析独立绘稿并制作对比预览。"
