@@ -2,7 +2,7 @@
 
 保留原 PV 的手绘画风、分镜和表演，把人物替换为自己的角色或 OC。面向低帧率帧动画、交替绘稿和角色重绘，不是普通视频换脸工具。
 
-这份 skill 从实际 PV 制作与多轮修复中提炼：眼睛/眉毛和手部结构、过度精细的画风、独立粒子遗漏、框内背景误删、红发被误认成场景、交替稿过度跳变或过于静止，以及长发转向的连续性。
+这份 skill 从实际 PV 制作与多轮修复中提炼：眼睛与手脚结构、原片画风迁移、图层语义、交替稿的真实二维变化、长发/衣物连续性、不同姿态的角色比例和相邻镜头定位。也覆盖预览到正式发布的状态、无字素材包与逐字歌词对齐的质量检查。
 
 ## 包含什么
 
@@ -10,10 +10,14 @@
 - [Prompt 模板](skills/pv-character-replacement/references/prompt-patterns.md)：画风锚帧、真实二维差值迁移、相邻端点过渡及局部修复。
 - [分析与曝光](skills/pv-character-replacement/references/analysis-and-timing.md)：严格关键稿识别、源时间轴与替换时间轴。
 - [图层与连续性](skills/pv-character-replacement/references/layers-and-continuity.md)：语义区域、掩膜、长发/衣物风动与循环衔接。
-- [检查与交付](skills/pv-character-replacement/references/review-and-delivery.md)：逐稿、连续组、原速对比和增量修复。
+- [比例与位置](skills/pv-character-replacement/references/proportions-and-placement.md)：已认可基准、相邻镜头配准、侧坐/躺姿、眼部遮挡及定位与重绘的选择。
+- [检查与交付](skills/pv-character-replacement/references/review-and-delivery.md)：逐稿、前后转场、原速对比、播放兼容性和正式文件同步。
+- [后期与歌词时间轴](skills/pv-character-replacement/references/postproduction-and-lyric-timing.md)：无字版、素材/字体清单、已知中文歌词对齐及低置信度复核；仅按需执行。
 - [pv_tools.py](skills/pv-character-replacement/scripts/pv_tools.py)：CFR候选绘稿分析、二维差值图、时间轴校验。
 
 生图由宿主的图像生成工具完成。辅助脚本不调用付费API、不包含模型凭据，也不通过光流/网格形变制作人物动作。模型仍可能忽略提示中的位置和结构，需要查阅生成结果及原速播放。
+
+角色设定、选定眼睛配色、比例锚帧、当前正式版本与素材映射保存在各自项目中。新增后期与对齐内容是工作流说明，并非仓库已内置一键去字或音频对齐程序；实际使用时需核对宿主工具与模型能力。
 
 ## 安装
 
